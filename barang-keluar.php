@@ -179,7 +179,7 @@ if (isset($_POST['hapus'])) {
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                            <a href="tambah-kategori-barang.php" class="btn btn-primary">Tambah Data</a>
+                                            <a href="tambah-barang-keluar.php" class="btn btn-primary">Tambah Data</a>
                                             <div class="table-responsive mt-4">
                                                 <table class="table table-stripped">
                                                     <thead>

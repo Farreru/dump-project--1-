@@ -15,10 +15,10 @@ $koneksi = mysqli_connect('localhost', 'root', '', 'db_inventoris');
 
 
 $query = "
-    SELECT
-        (SELECT COUNT(*) FROM barang_masuk) AS count_barang_masuk,
-        (SELECT COUNT(*) FROM barang_keluar) AS count_barang_keluar,
-        (SELECT COUNT(*) FROM barang_rusak) AS count_barang_rusak;
+SELECT
+(SELECT SUM(jumlah) FROM barang_masuk) AS count_barang_masuk,
+(SELECT SUM(jumlah) FROM barang_keluar) AS count_barang_keluar,
+(SELECT SUM(jumlah) FROM barang_rusak) AS count_barang_rusak;
 ";
 
 $result = mysqli_query($koneksi, $query);
